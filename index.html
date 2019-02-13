@@ -10,8 +10,8 @@
 	<br>
 	<script type="text/javascript">
 		
-		let socket = io('localhost:8080');
-		
+		let socket = io(location.hostname + ':{PORT}');
+
 		let btn = document.querySelector('#btn');
 
 		btn.onclick = () => {

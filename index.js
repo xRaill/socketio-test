@@ -2,9 +2,9 @@ const http = require('http');
 const fs = require('fs');
 const app = http.createServer(handler);
 
-let PORT = 8080;
+let PORT = 3333;
 
-let index = fs.readFileSync('./index.html').toString().replace(/{PORT}/g, PORT);
+let index = fs.readFileSync('./index.html');
 
 function handler(req, res) {
 	res.writeHead(200);
